@@ -1,0 +1,11 @@
+# Environment used to generate the published CrowdCC benchmark (Python 3.13.9,
+# Linux x86_64). Codec corruptions depend on the av/libx264 build and the others
+# on numpy/opencv. See README.md for reproducibility notes.
+# Depth maps: requirements-depth.txt.
+numpy==2.5.1
+opencv-python==5.0.0.93
+scipy==1.18.0
+scikit-image==0.26.0
+pillow==12.3.0
+av==18.0.0
+tqdm==4.68.4

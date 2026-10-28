@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use CrowdCC, please cite the paper listed below."
+type: software
+title: "CrowdCC: Jointly Benchmarking Corruption Robustness and Deployment Quantization in Crowd Counting"
+authors:
+  - family-names: Hasan
+    given-names: S Mahmudul
+    affiliation: Tulane University
+  - family-names: Peng
+    given-names: Lu
+    affiliation: Tulane University
+version: 1.0.0
+license: CC-BY-4.0
+repository-code: "https://github.com/Tulane-Computer-Architecture-Systems/CrowdCC-Release"
+preferred-citation:
+  type: conference-paper
+  title: "CrowdCC: Jointly Benchmarking Corruption Robustness and Deployment Quantization in Crowd Counting"
+  authors:
+    - family-names: Hasan
+      given-names: S Mahmudul
+      affiliation: Tulane University
+    - family-names: Peng
+      given-names: Lu
+      affiliation: Tulane University
+  collection-title: "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+  year: 2027

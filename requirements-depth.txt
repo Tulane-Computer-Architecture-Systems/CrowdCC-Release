@@ -1,0 +1,7 @@
+# `crowdcc depth` only (depth_aware_haze, far_field_defocus): the versions that computed the
+# published depth maps (PyTorch CUDA build, Python 3.13.9). Install with
+#   pip install --ignore-requires-python -r requirements-depth.txt
+# (Depth Anything 3 at this commit declares requires-python <= 3.13.0).
+torch==2.12.1
+torchvision==0.27.1
+depth-anything-3 @ git+https://github.com/ByteDance-Seed/depth-anything-3@3fe327a6abe2e5db95b54444ea95463dbfef5610

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crowdcc"
+version = "1.0.0"
+description = "CrowdCC: a corruption-robustness benchmark for crowd counting (WACV 2027)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "S Mahmudul Hasan", email = "shasan1@tulane.edu" },
+  { name = "Lu Peng", email = "lpeng3@tulane.edu" },
+]
+keywords = ["crowd counting", "robustness", "corruptions", "benchmark"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Image Recognition",
+]
+# Lower bounds only. The exact versions that produced the published benchmark
+# are pinned in requirements-lock.txt; see README.md for reproducibility notes.
+dependencies = [
+  "numpy>=2.0",
+  "opencv-python>=4.10",
+  "scipy>=1.13",
+  "scikit-image>=0.24",
+  "pillow>=10.0",
+  "av>=12.0",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+# `crowdcc depth`: Depth Anything 3 is installed from its repository (see README).
+depth = ["torch>=2.3"]
+
+[project.scripts]
+crowdcc = "crowdcc.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["crowdcc*"]
+
+[tool.setuptools.package-data]
+crowdcc = ["reference/*.json"]

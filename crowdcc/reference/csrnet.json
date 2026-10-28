@@ -1,0 +1,1251 @@
+{
+ "model": "CSRNet (Li et al., CVPR 2018)",
+ "note": "per-corruption E_c = mean over severities of MAE_kept; reference for mCE",
+ "results": {
+  "jhu": {
+   "fp16": {
+    "clean": {
+     "mae": 68.895819,
+     "rmse": 284.755361
+    },
+    "mcmae": 86.228641,
+    "n_images": 1600,
+    "per_corruption": {
+     "camera_motion_blur": {
+      "mae_kept": 89.516738,
+      "rmse_kept": 306.830993
+     },
+     "cast_shadow_illumination": {
+      "mae_kept": 73.762633,
+      "rmse_kept": 299.333448
+     },
+     "crowd_like_distractors": {
+      "mae_kept": 73.325643,
+      "rmse_kept": 310.159732
+     },
+     "depth_aware_haze": {
+      "mae_kept": 87.984651,
+      "rmse_kept": 335.124293
+     },
+     "far_field_defocus": {
+      "mae_kept": 88.665234,
+      "rmse_kept": 318.831959
+     },
+     "fixed_pattern_sensor_noise": {
+      "mae_kept": 103.950344,
+      "rmse_kept": 355.636788
+     },
+     "fov_loss_camera_reaim": {
+      "mae_kept": 66.953809,
+      "rmse_kept": 289.837144
+     },
+     "gaussian_noise": {
+      "mae_kept": 117.425415,
+      "rmse_kept": 366.511267
+     },
+     "h264_crf_compression": {
+      "mae_kept": 92.442691,
+      "rmse_kept": 343.019979
+     },
+     "highlight_clipping_bloom": {
+      "mae_kept": 109.292605,
+      "rmse_kept": 366.649007
+     },
+     "lens_contamination": {
+      "mae_kept": 74.935691,
+      "rmse_kept": 301.661773
+     },
+     "lens_flare_veiling": {
+      "mae_kept": 83.092425,
+      "rmse_kept": 314.133301
+     },
+     "low_light": {
+      "mae_kept": 100.997872,
+      "rmse_kept": 355.0043
+     },
+     "moire_aliasing": {
+      "mae_kept": 85.755614,
+      "rmse_kept": 314.00532
+     },
+     "object_distractors": {
+      "mae_kept": 69.559481,
+      "rmse_kept": 299.923399
+     },
+     "packet_loss_concealment": {
+      "mae_kept": 83.945593,
+      "rmse_kept": 335.735927
+     },
+     "rain_streaks": {
+      "mae_kept": 81.210726,
+      "rmse_kept": 313.519121
+     },
+     "snow_particles": {
+      "mae_kept": 93.837868,
+      "rmse_kept": 335.293634
+     },
+     "spacing_resolution_loss": {
+      "mae_kept": 75.58016,
+      "rmse_kept": 309.894738
+     },
+     "structured_foreground_occlusion": {
+      "mae_kept": 73.597222,
+      "rmse_kept": 305.327423
+     },
+     "texture_distractors": {
+      "mae_kept": 76.898416,
+      "rmse_kept": 318.561547
+     },
+     "viewpoint_perspective_shift": {
+      "mae_kept": 100.919507,
+      "rmse_kept": 365.195685
+     },
+     "vignetting_lens_shading": {
+      "mae_kept": 79.608402,
+      "rmse_kept": 312.66104
+     }
+    },
+    "rd": 25.158
+   },
+   "fp32": {
+    "clean": {
+     "mae": 68.864966,
+     "rmse": 284.641489
+    },
+    "mcmae": 86.216155,
+    "n_images": 1600,
+    "per_corruption": {
+     "camera_motion_blur": {
+      "mae_kept": 89.549515,
+      "rmse_kept": 306.72976
+     },
+     "cast_shadow_illumination": {
+      "mae_kept": 73.741246,
+      "rmse_kept": 299.226654
+     },
+     "crowd_like_distractors": {
+      "mae_kept": 73.260399,
+      "rmse_kept": 310.029187
+     },
+     "depth_aware_haze": {
+      "mae_kept": 87.97046,
+      "rmse_kept": 335.014984
+     },
+     "far_field_defocus": {
+      "mae_kept": 88.672167,
+      "rmse_kept": 318.735223
+     },
+     "fixed_pattern_sensor_noise": {
+      "mae_kept": 103.931805,
+      "rmse_kept": 355.515472
+     },
+     "fov_loss_camera_reaim": {
+      "mae_kept": 66.939344,
+      "rmse_kept": 289.748424
+     },
+     "gaussian_noise": {
+      "mae_kept": 117.457255,
+      "rmse_kept": 366.375289
+     },
+     "h264_crf_compression": {
+      "mae_kept": 92.413626,
+      "rmse_kept": 342.91815
+     },
+     "highlight_clipping_bloom": {
+      "mae_kept": 109.365869,
+      "rmse_kept": 366.644427
+     },
+     "lens_contamination": {
+      "mae_kept": 74.894372,
+      "rmse_kept": 301.534547
+     },
+     "lens_flare_veiling": {
+      "mae_kept": 83.07921,
+      "rmse_kept": 314.021093
+     },
+     "low_light": {
+      "mae_kept": 101.008258,
+      "rmse_kept": 354.87473
+     },
+     "moire_aliasing": {
+      "mae_kept": 85.713949,
+      "rmse_kept": 313.889437
+     },
+     "object_distractors": {
+      "mae_kept": 69.530463,
+      "rmse_kept": 299.836222
+     },
+     "packet_loss_concealment": {
+      "mae_kept": 83.935797,
+      "rmse_kept": 335.658322
+     },
+     "rain_streaks": {
+      "mae_kept": 81.191428,
+      "rmse_kept": 313.428367
+     },
+     "snow_particles": {
+      "mae_kept": 93.855371,
+      "rmse_kept": 335.185086
+     },
+     "spacing_resolution_loss": {
+      "mae_kept": 75.550914,
+      "rmse_kept": 309.80019
+     },
+     "structured_foreground_occlusion": {
+      "mae_kept": 73.588641,
+      "rmse_kept": 305.244596
+     },
+     "texture_distractors": {
+      "mae_kept": 76.845763,
+      "rmse_kept": 318.458693
+     },
+     "viewpoint_perspective_shift": {
+      "mae_kept": 100.906605,
+      "rmse_kept": 365.07557
+     },
+     "vignetting_lens_shading": {
+      "mae_kept": 79.569105,
+      "rmse_kept": 312.509766
+     }
+    },
+    "rd": 25.196
+   },
+   "int8": {
+    "clean": {
+     "mae": 68.784007,
+     "rmse": 279.43143
+    },
+    "mcmae": 85.823105,
+    "n_images": 1600,
+    "per_corruption": {
+     "camera_motion_blur": {
+      "mae_kept": 90.185494,
+      "rmse_kept": 301.549819
+     },
+     "cast_shadow_illumination": {
+      "mae_kept": 73.129319,
+      "rmse_kept": 291.887046
+     },
+     "crowd_like_distractors": {
+      "mae_kept": 71.702208,
+      "rmse_kept": 304.095012
+     },
+     "depth_aware_haze": {
+      "mae_kept": 87.629674,
+      "rmse_kept": 327.672013
+     },
+     "far_field_defocus": {
+      "mae_kept": 88.268136,
+      "rmse_kept": 311.068723
+     },
+     "fixed_pattern_sensor_noise": {
+      "mae_kept": 103.49834,
+      "rmse_kept": 349.697301
+     },
+     "fov_loss_camera_reaim": {
+      "mae_kept": 66.483389,
+      "rmse_kept": 283.675957
+     },
+     "gaussian_noise": {
+      "mae_kept": 118.13158,
+      "rmse_kept": 360.360807
+     },
+     "h264_crf_compression": {
+      "mae_kept": 90.931596,
+      "rmse_kept": 335.72681
+     },
+     "highlight_clipping_bloom": {
+      "mae_kept": 111.219483,
+      "rmse_kept": 363.128076
+     },
+     "lens_contamination": {
+      "mae_kept": 73.722862,
+      "rmse_kept": 295.078312
+     },
+     "lens_flare_veiling": {
+      "mae_kept": 83.265778,
+      "rmse_kept": 308.439161
+     },
+     "low_light": {
+      "mae_kept": 100.460673,
+      "rmse_kept": 347.383504
+     },
+     "moire_aliasing": {
+      "mae_kept": 83.579608,
+      "rmse_kept": 306.498168
+     },
+     "object_distractors": {
+      "mae_kept": 70.057261,
+      "rmse_kept": 296.513881
+     },
+     "packet_loss_concealment": {
+      "mae_kept": 84.560458,
+      "rmse_kept": 331.191331
+     },
+     "rain_streaks": {
+      "mae_kept": 80.647056,
+      "rmse_kept": 307.188195
+     },
+     "snow_particles": {
+      "mae_kept": 94.909826,
+      "rmse_kept": 329.843719
+     },
+     "spacing_resolution_loss": {
+      "mae_kept": 74.495916,
+      "rmse_kept": 303.539367
+     },
+     "structured_foreground_occlusion": {
+      "mae_kept": 74.083076,
+      "rmse_kept": 300.015378
+     },
+     "texture_distractors": {
+      "mae_kept": 75.199006,
+      "rmse_kept": 313.268461
+     },
+     "viewpoint_perspective_shift": {
+      "mae_kept": 99.92214,
+      "rmse_kept": 358.399586
+     },
+     "vignetting_lens_shading": {
+      "mae_kept": 77.848538,
+      "rmse_kept": 303.797908
+     }
+    },
+    "rd": 24.7719
+   }
+  },
+  "qnrf": {
+   "fp16": {
+    "clean": {
+     "mae": 95.895405,
+     "rmse": 169.225268
+    },
+    "mcmae": 120.964275,
+    "n_images": 334,
+    "per_corruption": {
+     "camera_motion_blur": {
+      "mae_kept": 106.489957,
+      "rmse_kept": 180.592563
+     },
+     "cast_shadow_illumination": {
+      "mae_kept": 103.998687,
+      "rmse_kept": 184.826738
+     },
+     "crowd_like_distractors": {
+      "mae_kept": 103.938161,
+      "rmse_kept": 176.710515
+     },
+     "depth_aware_haze": {
+      "mae_kept": 130.273077,
+      "rmse_kept": 228.527854
+     },
+     "far_field_defocus": {
+      "mae_kept": 126.289838,
+      "rmse_kept": 218.581459
+     },
+     "fixed_pattern_sensor_noise": {
+      "mae_kept": 141.236141,
+      "rmse_kept": 239.404673
+     },
+     "fov_loss_camera_reaim": {
+      "mae_kept": 95.463806,
+      "rmse_kept": 173.082086
+     },
+     "gaussian_noise": {
+      "mae_kept": 155.745538,
+      "rmse_kept": 257.084109
+     },
+     "h264_crf_compression": {
+      "mae_kept": 113.554369,
+      "rmse_kept": 195.805265
+     },
+     "highlight_clipping_bloom": {
+      "mae_kept": 179.558488,
+      "rmse_kept": 372.378585
+     },
+     "lens_contamination": {
+      "mae_kept": 103.447472,
+      "rmse_kept": 183.945224
+     },
+     "lens_flare_veiling": {
+      "mae_kept": 131.624562,
+      "rmse_kept": 238.622023
+     },
+     "low_light": {
+      "mae_kept": 141.698664,
+      "rmse_kept": 237.967253
+     },
+     "moire_aliasing": {
+      "mae_kept": 108.127052,
+      "rmse_kept": 201.963408
+     },
+     "object_distractors": {
+      "mae_kept": 111.199569,
+      "rmse_kept": 177.794181
+     },
+     "packet_loss_concealment": {
+      "mae_kept": 111.400142,
+      "rmse_kept": 190.328278
+     },
+     "rain_streaks": {
+      "mae_kept": 119.802182,
+      "rmse_kept": 210.95244
+     },
+     "snow_particles": {
+      "mae_kept": 128.339436,
+      "rmse_kept": 228.62185
+     },
+     "spacing_resolution_loss": {
+      "mae_kept": 102.154219,
+      "rmse_kept": 183.705047
+     },
+     "structured_foreground_occlusion": {
+      "mae_kept": 103.961223,
+      "rmse_kept": 181.03392
+     },
+     "texture_distractors": {
+      "mae_kept": 103.05268,
+      "rmse_kept": 180.734708
+     },
+     "viewpoint_perspective_shift": {
+      "mae_kept": 146.324606,
+      "rmse_kept": 276.360907
+     },
+     "vignetting_lens_shading": {
+      "mae_kept": 114.498448,
+      "rmse_kept": 206.981644
+     }
+    },
+    "rd": 26.1419
+   },
+   "fp32": {
+    "clean": {
+     "mae": 95.786008,
+     "rmse": 168.939084
+    },
+    "mcmae": 120.833347,
+    "n_images": 334,
+    "per_corruption": {
+     "camera_motion_blur": {
+      "mae_kept": 106.360814,
+      "rmse_kept": 180.326347
+     },
+     "cast_shadow_illumination": {
+      "mae_kept": 103.859893,
+      "rmse_kept": 184.490536
+     },
+     "crowd_like_distractors": {
+      "mae_kept": 103.804512,
+      "rmse_kept": 176.423308
+     },
+     "depth_aware_haze": {
+      "mae_kept": 130.138329,
+      "rmse_kept": 228.256746
+     },
+     "far_field_defocus": {
+      "mae_kept": 126.126562,
+      "rmse_kept": 218.236498
+     },
+     "fixed_pattern_sensor_noise": {
+      "mae_kept": 141.038213,
+      "rmse_kept": 239.050451
+     },
+     "fov_loss_camera_reaim": {
+      "mae_kept": 95.444778,
+      "rmse_kept": 172.920433
+     },
+     "gaussian_noise": {
+      "mae_kept": 155.562171,
+      "rmse_kept": 256.740288
+     },
+     "h264_crf_compression": {
+      "mae_kept": 113.35274,
+      "rmse_kept": 195.384923
+     },
+     "highlight_clipping_bloom": {
+      "mae_kept": 179.453514,
+      "rmse_kept": 372.179884
+     },
+     "lens_contamination": {
+      "mae_kept": 103.27506,
+      "rmse_kept": 183.573149
+     },
+     "lens_flare_veiling": {
+      "mae_kept": 131.495177,
+      "rmse_kept": 238.354472
+     },
+     "low_light": {
+      "mae_kept": 141.514915,
+      "rmse_kept": 237.602021
+     },
+     "moire_aliasing": {
+      "mae_kept": 107.972583,
+      "rmse_kept": 201.640778
+     },
+     "object_distractors": {
+      "mae_kept": 111.288269,
+      "rmse_kept": 177.891692
+     },
+     "packet_loss_concealment": {
+      "mae_kept": 111.30594,
+      "rmse_kept": 190.116547
+     },
+     "rain_streaks": {
+      "mae_kept": 119.644548,
+      "rmse_kept": 210.659415
+     },
+     "snow_particles": {
+      "mae_kept": 128.223854,
+      "rmse_kept": 228.381985
+     },
+     "spacing_resolution_loss": {
+      "mae_kept": 102.035121,
+      "rmse_kept": 183.409865
+     },
+     "structured_foreground_occlusion": {
+      "mae_kept": 103.921637,
+      "rmse_kept": 180.836833
+     },
+     "texture_distractors": {
+      "mae_kept": 102.910571,
+      "rmse_kept": 180.419825
+     },
+     "viewpoint_perspective_shift": {
+      "mae_kept": 146.102352,
+      "rmse_kept": 275.8594
+     },
+     "vignetting_lens_shading": {
+      "mae_kept": 114.335419,
+      "rmse_kept": 206.615839
+     }
+    },
+    "rd": 26.1493
+   },
+   "int8": {
+    "clean": {
+     "mae": 96.677083,
+     "rmse": 168.980425
+    },
+    "mcmae": 120.094336,
+    "n_images": 334,
+    "per_corruption": {
+     "camera_motion_blur": {
+      "mae_kept": 103.63965,
+      "rmse_kept": 177.869074
+     },
+     "cast_shadow_illumination": {
+      "mae_kept": 103.76238,
+      "rmse_kept": 182.934166
+     },
+     "crowd_like_distractors": {
+      "mae_kept": 106.577638,
+      "rmse_kept": 177.458907
+     },
+     "depth_aware_haze": {
+      "mae_kept": 128.210836,
+      "rmse_kept": 221.461042
+     },
+     "far_field_defocus": {
+      "mae_kept": 120.584941,
+      "rmse_kept": 212.093273
+     },
+     "fixed_pattern_sensor_noise": {
+      "mae_kept": 140.001808,
+      "rmse_kept": 237.878764
+     },
+     "fov_loss_camera_reaim": {
+      "mae_kept": 95.625845,
+      "rmse_kept": 171.786326
+     },
+     "gaussian_noise": {
+      "mae_kept": 151.395281,
+      "rmse_kept": 253.795325
+     },
+     "h264_crf_compression": {
+      "mae_kept": 113.152122,
+      "rmse_kept": 192.093828
+     },
+     "highlight_clipping_bloom": {
+      "mae_kept": 175.223915,
+      "rmse_kept": 367.184224
+     },
+     "lens_contamination": {
+      "mae_kept": 103.38083,
+      "rmse_kept": 181.531256
+     },
+     "lens_flare_veiling": {
+      "mae_kept": 129.136721,
+      "rmse_kept": 233.160742
+     },
+     "low_light": {
+      "mae_kept": 138.274528,
+      "rmse_kept": 235.75552
+     },
+     "moire_aliasing": {
+      "mae_kept": 107.660744,
+      "rmse_kept": 200.140027
+     },
+     "object_distractors": {
+      "mae_kept": 118.509443,
+      "rmse_kept": 183.689354
+     },
+     "packet_loss_concealment": {
+      "mae_kept": 112.860589,
+      "rmse_kept": 190.110503
+     },
+     "rain_streaks": {
+      "mae_kept": 117.583885,
+      "rmse_kept": 204.203192
+     },
+     "snow_particles": {
+      "mae_kept": 126.094758,
+      "rmse_kept": 222.171933
+     },
+     "spacing_resolution_loss": {
+      "mae_kept": 102.020172,
+      "rmse_kept": 182.000099
+     },
+     "structured_foreground_occlusion": {
+      "mae_kept": 107.228296,
+      "rmse_kept": 183.468868
+     },
+     "texture_distractors": {
+      "mae_kept": 104.377791,
+      "rmse_kept": 180.909744
+     },
+     "viewpoint_perspective_shift": {
+      "mae_kept": 144.693898,
+      "rmse_kept": 276.987904
+     },
+     "vignetting_lens_shading": {
+      "mae_kept": 112.173653,
+      "rmse_kept": 203.094254
+     }
+    },
+    "rd": 24.2221
+   }
+  },
+  "sha": {
+   "fp16": {
+    "clean": {
+     "mae": 67.415909,
+     "rmse": 110.731627
+    },
+    "mcmae": 87.267809,
+    "n_images": 182,
+    "per_corruption": {
+     "camera_motion_blur": {
+      "mae_kept": 93.187267,
+      "rmse_kept": 138.366238
+     },
+     "cast_shadow_illumination": {
+      "mae_kept": 74.654759,
+      "rmse_kept": 124.862433
+     },
+     "crowd_like_distractors": {
+      "mae_kept": 68.749739,
+      "rmse_kept": 117.147512
+     },
+     "depth_aware_haze": {
+      "mae_kept": 93.898092,
+      "rmse_kept": 155.688868
+     },
+     "far_field_defocus": {
+      "mae_kept": 86.302539,
+      "rmse_kept": 132.866027
+     },
+     "fixed_pattern_sensor_noise": {
+      "mae_kept": 102.642452,
+      "rmse_kept": 166.210422
+     },
+     "fov_loss_camera_reaim": {
+      "mae_kept": 74.919198,
+      "rmse_kept": 124.875497
+     },
+     "gaussian_noise": {
+      "mae_kept": 99.854543,
+      "rmse_kept": 168.62415
+     },
+     "h264_crf_compression": {
+      "mae_kept": 92.058694,
+      "rmse_kept": 147.503887
+     },
+     "highlight_clipping_bloom": {
+      "mae_kept": 121.11602,
+      "rmse_kept": 185.775058
+     },
+     "lens_contamination": {
+      "mae_kept": 73.883388,
+      "rmse_kept": 128.398544
+     },
+     "lens_flare_veiling": {
+      "mae_kept": 88.711727,
+      "rmse_kept": 143.311324
+     },
+     "low_light": {
+      "mae_kept": 93.050565,
+      "rmse_kept": 161.069969
+     },
+     "moire_aliasing": {
+      "mae_kept": 105.188424,
+      "rmse_kept": 193.889674
+     },
+     "object_distractors": {
+      "mae_kept": 75.783352,
+      "rmse_kept": 114.986173
+     },
+     "packet_loss_concealment": {
+      "mae_kept": 76.12871,
+      "rmse_kept": 119.199884
+     },
+     "rain_streaks": {
+      "mae_kept": 79.098855,
+      "rmse_kept": 130.48121
+     },
+     "snow_particles": {
+      "mae_kept": 80.15685,
+      "rmse_kept": 130.772505
+     },
+     "spacing_resolution_loss": {
+      "mae_kept": 96.947918,
+      "rmse_kept": 173.566124
+     },
+     "structured_foreground_occlusion": {
+      "mae_kept": 73.286085,
+      "rmse_kept": 115.380616
+     },
+     "texture_distractors": {
+      "mae_kept": 76.358876,
+      "rmse_kept": 126.759232
+     },
+     "viewpoint_perspective_shift": {
+      "mae_kept": 99.651345,
+      "rmse_kept": 179.004912
+     },
+     "vignetting_lens_shading": {
+      "mae_kept": 81.530207,
+      "rmse_kept": 136.921208
+     }
+    },
+    "rd": 29.4469
+   },
+   "fp32": {
+    "clean": {
+     "mae": 67.407454,
+     "rmse": 110.670995
+    },
+    "mcmae": 87.248668,
+    "n_images": 182,
+    "per_corruption": {
+     "camera_motion_blur": {
+      "mae_kept": 93.157695,
+      "rmse_kept": 138.311057
+     },
+     "cast_shadow_illumination": {
+      "mae_kept": 74.640759,
+      "rmse_kept": 124.808564
+     },
+     "crowd_like_distractors": {
+      "mae_kept": 68.730696,
+      "rmse_kept": 117.073486
+     },
+     "depth_aware_haze": {
+      "mae_kept": 93.85892,
+      "rmse_kept": 155.599143
+     },
+     "far_field_defocus": {
+      "mae_kept": 86.265395,
+      "rmse_kept": 132.794941
+     },
+     "fixed_pattern_sensor_noise": {
+      "mae_kept": 102.620398,
+      "rmse_kept": 166.147248
+     },
+     "fov_loss_camera_reaim": {
+      "mae_kept": 74.92497,
+      "rmse_kept": 124.830946
+     },
+     "gaussian_noise": {
+      "mae_kept": 99.819465,
+      "rmse_kept": 168.553755
+     },
+     "h264_crf_compression": {
+      "mae_kept": 92.035819,
+      "rmse_kept": 147.445333
+     },
+     "highlight_clipping_bloom": {
+      "mae_kept": 121.069168,
+      "rmse_kept": 185.703331
+     },
+     "lens_contamination": {
+      "mae_kept": 73.859603,
+      "rmse_kept": 128.325704
+     },
+     "lens_flare_veiling": {
+      "mae_kept": 88.681646,
+      "rmse_kept": 143.234341
+     },
+     "low_light": {
+      "mae_kept": 93.030008,
+      "rmse_kept": 161.014964
+     },
+     "moire_aliasing": {
+      "mae_kept": 105.159825,
+      "rmse_kept": 193.860654
+     },
+     "object_distractors": {
+      "mae_kept": 75.808953,
+      "rmse_kept": 114.993369
+     },
+     "packet_loss_concealment": {
+      "mae_kept": 76.127754,
+      "rmse_kept": 119.165419
+     },
+     "rain_streaks": {
+      "mae_kept": 79.08787,
+      "rmse_kept": 130.420236
+     },
+     "snow_particles": {
+      "mae_kept": 80.158186,
+      "rmse_kept": 130.727688
+     },
+     "spacing_resolution_loss": {
+      "mae_kept": 96.915045,
+      "rmse_kept": 173.526666
+     },
+     "structured_foreground_occlusion": {
+      "mae_kept": 73.292418,
+      "rmse_kept": 115.342741
+     },
+     "texture_distractors": {
+      "mae_kept": 76.362473,
+      "rmse_kept": 126.711687
+     },
+     "viewpoint_perspective_shift": {
+      "mae_kept": 99.598692,
+      "rmse_kept": 178.914076
+     },
+     "vignetting_lens_shading": {
+      "mae_kept": 81.513603,
+      "rmse_kept": 136.876815
+     }
+    },
+    "rd": 29.4347
+   },
+   "int8": {
+    "clean": {
+     "mae": 68.237826,
+     "rmse": 110.387878
+    },
+    "mcmae": 87.939518,
+    "n_images": 182,
+    "per_corruption": {
+     "camera_motion_blur": {
+      "mae_kept": 95.726445,
+      "rmse_kept": 139.771119
+     },
+     "cast_shadow_illumination": {
+      "mae_kept": 75.447735,
+      "rmse_kept": 124.272996
+     },
+     "crowd_like_distractors": {
+      "mae_kept": 69.017666,
+      "rmse_kept": 116.311705
+     },
+     "depth_aware_haze": {
+      "mae_kept": 95.298936,
+      "rmse_kept": 155.086275
+     },
+     "far_field_defocus": {
+      "mae_kept": 87.302263,
+      "rmse_kept": 132.096945
+     },
+     "fixed_pattern_sensor_noise": {
+      "mae_kept": 100.97422,
+      "rmse_kept": 163.502178
+     },
+     "fov_loss_camera_reaim": {
+      "mae_kept": 76.207168,
+      "rmse_kept": 124.604548
+     },
+     "gaussian_noise": {
+      "mae_kept": 99.251578,
+      "rmse_kept": 167.158126
+     },
+     "h264_crf_compression": {
+      "mae_kept": 92.952553,
+      "rmse_kept": 147.018573
+     },
+     "highlight_clipping_bloom": {
+      "mae_kept": 121.941098,
+      "rmse_kept": 185.24224
+     },
+     "lens_contamination": {
+      "mae_kept": 74.233935,
+      "rmse_kept": 127.594507
+     },
+     "lens_flare_veiling": {
+      "mae_kept": 89.643619,
+      "rmse_kept": 142.622469
+     },
+     "low_light": {
+      "mae_kept": 93.101846,
+      "rmse_kept": 160.466032
+     },
+     "moire_aliasing": {
+      "mae_kept": 104.864934,
+      "rmse_kept": 191.244565
+     },
+     "object_distractors": {
+      "mae_kept": 76.005462,
+      "rmse_kept": 115.573671
+     },
+     "packet_loss_concealment": {
+      "mae_kept": 76.899795,
+      "rmse_kept": 119.64334
+     },
+     "rain_streaks": {
+      "mae_kept": 80.408525,
+      "rmse_kept": 129.652453
+     },
+     "snow_particles": {
+      "mae_kept": 82.023735,
+      "rmse_kept": 131.200581
+     },
+     "spacing_resolution_loss": {
+      "mae_kept": 97.268544,
+      "rmse_kept": 172.169542
+     },
+     "structured_foreground_occlusion": {
+      "mae_kept": 74.469006,
+      "rmse_kept": 115.653218
+     },
+     "texture_distractors": {
+      "mae_kept": 77.835921,
+      "rmse_kept": 126.691434
+     },
+     "viewpoint_perspective_shift": {
+      "mae_kept": 99.090792,
+      "rmse_kept": 177.823339
+     },
+     "vignetting_lens_shading": {
+      "mae_kept": 82.643127,
+      "rmse_kept": 136.484975
+     }
+    },
+    "rd": 28.8721
+   }
+  },
+  "shb": {
+   "fp16": {
+    "clean": {
+     "mae": 11.383121,
+     "rmse": 16.188109
+    },
+    "mcmae": 26.529432,
+    "n_images": 316,
+    "per_corruption": {
+     "camera_motion_blur": {
+      "mae_kept": 33.944704,
+      "rmse_kept": 39.367941
+     },
+     "cast_shadow_illumination": {
+      "mae_kept": 17.889825,
+      "rmse_kept": 26.434268
+     },
+     "crowd_like_distractors": {
+      "mae_kept": 12.438069,
+      "rmse_kept": 20.304988
+     },
+     "depth_aware_haze": {
+      "mae_kept": 54.681077,
+      "rmse_kept": 72.287395
+     },
+     "far_field_defocus": {
+      "mae_kept": 50.240348,
+      "rmse_kept": 59.558348
+     },
+     "fixed_pattern_sensor_noise": {
+      "mae_kept": 28.535567,
+      "rmse_kept": 37.629063
+     },
+     "fov_loss_camera_reaim": {
+      "mae_kept": 12.571452,
+      "rmse_kept": 21.471148
+     },
+     "gaussian_noise": {
+      "mae_kept": 33.459651,
+      "rmse_kept": 43.47603
+     },
+     "h264_crf_compression": {
+      "mae_kept": 20.595852,
+      "rmse_kept": 30.071457
+     },
+     "highlight_clipping_bloom": {
+      "mae_kept": 38.333558,
+      "rmse_kept": 53.454491
+     },
+     "lens_contamination": {
+      "mae_kept": 17.213717,
+      "rmse_kept": 24.720519
+     },
+     "lens_flare_veiling": {
+      "mae_kept": 42.173399,
+      "rmse_kept": 57.642124
+     },
+     "low_light": {
+      "mae_kept": 37.990501,
+      "rmse_kept": 50.420143
+     },
+     "moire_aliasing": {
+      "mae_kept": 20.284711,
+      "rmse_kept": 33.717249
+     },
+     "object_distractors": {
+      "mae_kept": 11.541933,
+      "rmse_kept": 16.996421
+     },
+     "packet_loss_concealment": {
+      "mae_kept": 17.313007,
+      "rmse_kept": 26.021351
+     },
+     "rain_streaks": {
+      "mae_kept": 27.312601,
+      "rmse_kept": 36.486807
+     },
+     "snow_particles": {
+      "mae_kept": 35.548003,
+      "rmse_kept": 47.016489
+     },
+     "spacing_resolution_loss": {
+      "mae_kept": 23.176264,
+      "rmse_kept": 33.691998
+     },
+     "structured_foreground_occlusion": {
+      "mae_kept": 12.78025,
+      "rmse_kept": 19.026673
+     },
+     "texture_distractors": {
+      "mae_kept": 11.918703,
+      "rmse_kept": 18.405982
+     },
+     "viewpoint_perspective_shift": {
+      "mae_kept": 16.443607,
+      "rmse_kept": 29.115605
+     },
+     "vignetting_lens_shading": {
+      "mae_kept": 33.790137,
+      "rmse_kept": 47.591371
+     }
+    },
+    "rd": 133.0594
+   },
+   "fp32": {
+    "clean": {
+     "mae": 11.376491,
+     "rmse": 16.171897
+    },
+    "mcmae": 26.518453,
+    "n_images": 316,
+    "per_corruption": {
+     "camera_motion_blur": {
+      "mae_kept": 33.933136,
+      "rmse_kept": 39.350663
+     },
+     "cast_shadow_illumination": {
+      "mae_kept": 17.878163,
+      "rmse_kept": 26.415785
+     },
+     "crowd_like_distractors": {
+      "mae_kept": 12.429374,
+      "rmse_kept": 20.284626
+     },
+     "depth_aware_haze": {
+      "mae_kept": 54.672736,
+      "rmse_kept": 72.276751
+     },
+     "far_field_defocus": {
+      "mae_kept": 50.230083,
+      "rmse_kept": 59.545183
+     },
+     "fixed_pattern_sensor_noise": {
+      "mae_kept": 28.521355,
+      "rmse_kept": 37.608809
+     },
+     "fov_loss_camera_reaim": {
+      "mae_kept": 12.571637,
+      "rmse_kept": 21.469209
+     },
+     "gaussian_noise": {
+      "mae_kept": 33.44873,
+      "rmse_kept": 43.459918
+     },
+     "h264_crf_compression": {
+      "mae_kept": 20.577226,
+      "rmse_kept": 30.043384
+     },
+     "highlight_clipping_bloom": {
+      "mae_kept": 38.315478,
+      "rmse_kept": 53.429016
+     },
+     "lens_contamination": {
+      "mae_kept": 17.200881,
+      "rmse_kept": 24.697368
+     },
+     "lens_flare_veiling": {
+      "mae_kept": 42.160021,
+      "rmse_kept": 57.625772
+     },
+     "low_light": {
+      "mae_kept": 37.986008,
+      "rmse_kept": 50.411802
+     },
+     "moire_aliasing": {
+      "mae_kept": 20.271254,
+      "rmse_kept": 33.698025
+     },
+     "object_distractors": {
+      "mae_kept": 11.544571,
+      "rmse_kept": 17.000446
+     },
+     "packet_loss_concealment": {
+      "mae_kept": 17.303153,
+      "rmse_kept": 26.002091
+     },
+     "rain_streaks": {
+      "mae_kept": 27.296879,
+      "rmse_kept": 36.465106
+     },
+     "snow_particles": {
+      "mae_kept": 35.5282,
+      "rmse_kept": 46.991944
+     },
+     "spacing_resolution_loss": {
+      "mae_kept": 23.165296,
+      "rmse_kept": 33.675582
+     },
+     "structured_foreground_occlusion": {
+      "mae_kept": 12.770251,
+      "rmse_kept": 19.005093
+     },
+     "texture_distractors": {
+      "mae_kept": 11.912669,
+      "rmse_kept": 18.390771
+     },
+     "viewpoint_perspective_shift": {
+      "mae_kept": 16.430146,
+      "rmse_kept": 29.087222
+     },
+     "vignetting_lens_shading": {
+      "mae_kept": 33.777175,
+      "rmse_kept": 47.575701
+     }
+    },
+    "rd": 133.0987
+   },
+   "int8": {
+    "clean": {
+     "mae": 11.1141,
+     "rmse": 15.863274
+    },
+    "mcmae": 26.066311,
+    "n_images": 316,
+    "per_corruption": {
+     "camera_motion_blur": {
+      "mae_kept": 33.360868,
+      "rmse_kept": 38.610452
+     },
+     "cast_shadow_illumination": {
+      "mae_kept": 17.157763,
+      "rmse_kept": 25.681277
+     },
+     "crowd_like_distractors": {
+      "mae_kept": 12.147906,
+      "rmse_kept": 19.716729
+     },
+     "depth_aware_haze": {
+      "mae_kept": 53.884792,
+      "rmse_kept": 71.372703
+     },
+     "far_field_defocus": {
+      "mae_kept": 49.709437,
+      "rmse_kept": 58.779251
+     },
+     "fixed_pattern_sensor_noise": {
+      "mae_kept": 28.555202,
+      "rmse_kept": 37.632299
+     },
+     "fov_loss_camera_reaim": {
+      "mae_kept": 12.604621,
+      "rmse_kept": 21.466714
+     },
+     "gaussian_noise": {
+      "mae_kept": 33.255835,
+      "rmse_kept": 43.265961
+     },
+     "h264_crf_compression": {
+      "mae_kept": 20.031394,
+      "rmse_kept": 29.407816
+     },
+     "highlight_clipping_bloom": {
+      "mae_kept": 37.685465,
+      "rmse_kept": 52.668822
+     },
+     "lens_contamination": {
+      "mae_kept": 16.718112,
+      "rmse_kept": 24.149644
+     },
+     "lens_flare_veiling": {
+      "mae_kept": 41.439999,
+      "rmse_kept": 56.856036
+     },
+     "low_light": {
+      "mae_kept": 37.626857,
+      "rmse_kept": 50.032076
+     },
+     "moire_aliasing": {
+      "mae_kept": 19.567985,
+      "rmse_kept": 32.920848
+     },
+     "object_distractors": {
+      "mae_kept": 11.747357,
+      "rmse_kept": 17.426667
+     },
+     "packet_loss_concealment": {
+      "mae_kept": 16.950336,
+      "rmse_kept": 25.535582
+     },
+     "rain_streaks": {
+      "mae_kept": 26.48826,
+      "rmse_kept": 35.574798
+     },
+     "snow_particles": {
+      "mae_kept": 34.741045,
+      "rmse_kept": 46.149168
+     },
+     "spacing_resolution_loss": {
+      "mae_kept": 22.444827,
+      "rmse_kept": 32.850975
+     },
+     "structured_foreground_occlusion": {
+      "mae_kept": 12.603315,
+      "rmse_kept": 18.72621
+     },
+     "texture_distractors": {
+      "mae_kept": 11.821064,
+      "rmse_kept": 18.32185
+     },
+     "viewpoint_perspective_shift": {
+      "mae_kept": 16.282357,
+      "rmse_kept": 29.096228
+     },
+     "vignetting_lens_shading": {
+      "mae_kept": 32.700362,
+      "rmse_kept": 46.393553
+     }
+    },
+    "rd": 134.5337
+   }
+  }
+ },
+ "source": "CrowdCC paper, WACV 2027"
+}
